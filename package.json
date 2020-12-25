@@ -6,6 +6,7 @@
   "author": "Yoichi Izumi <quanyangyi0323@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "documentation": "^13.1.0",
     "eslint-config-prettier": "^7.1.0",
     "prettier": "^2.2.1"
   }
