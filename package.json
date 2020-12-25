@@ -1,0 +1,12 @@
+{
+  "name": "pure_js_template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:asura/pure_js_template.git",
+  "author": "Yoichi Izumi <quanyangyi0323@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-prettier": "^7.1.0",
+    "prettier": "^2.2.1"
+  }
+}
