@@ -6,11 +6,18 @@
   "author": "Yoichi Izumi <quanyangyi0323@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "chokidar-cli": "^2.1.0",
-    "documentation": "^13.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^7.1.0",
-    "prettier": "^2.2.1"
+    "chokidar-cli": "^3.0.0",
+    "jsdoc": "^4.0.3",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3"
+  },
+  "overrides": {
+    "@babel/traverse": "^7.23.2",
+    "semver": "^7.5.2",
+    "braces": "^3.0.3",
+    "glob-parent": "^6.0.2",
+    "micromatch": "^4.0.8"
   },
   "scripts": {
     "test": "open spec/index.html",
@@ -18,6 +25,6 @@
     "lint:fix": "eslint src/**/*.js spec/**/*.js --fix",
     "format": "prettier --write \"**/*.{js,json,md}\"",
     "watch": "chokidar 'src/**/*.js' -c 'npm run docs'",
-    "docs": "documentation build src/** -f html -o docs"
+    "docs": "jsdoc -d docs -r src/"
   }
 }
