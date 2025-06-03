@@ -8,10 +8,15 @@
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "documentation": "^13.1.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^7.1.0",
     "prettier": "^2.2.1"
   },
   "scripts": {
+    "test": "open spec/index.html",
+    "lint": "eslint src/**/*.js spec/**/*.js",
+    "lint:fix": "eslint src/**/*.js spec/**/*.js --fix",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
     "watch": "chokidar 'src/**/*.js' -c 'npm run docs'",
     "docs": "documentation build src/** -f html -o docs"
   }
