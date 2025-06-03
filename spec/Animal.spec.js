@@ -13,7 +13,7 @@ describe("Animalクラス", () => {
     expect(sut.speak()).toEqual("NAME「鳴き声」");
   });
 
-  it("seepメソッドを呼ぶと寝る", () => {
+  it("sleepメソッドを呼ぶと寝る", () => {
     expect(sut.sleep()).toEqual("NAME「zzz」");
   });
 });
